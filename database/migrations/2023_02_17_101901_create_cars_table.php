@@ -27,6 +27,7 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->timestamp('sold_at')->nullable();
             $table->integer('views')->default(0);
+            $table->string('image_path')->nullable();
             $table->timestamps();
         });
     }
